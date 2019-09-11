@@ -1,0 +1,23 @@
+﻿public class Principal {
+
+	//Utilizando agora a classe Conta
+	public static void main(String[] args){
+	//instanciando duas contas, c1 e c2
+	Conta c1=new Conta();
+	Conta c2=new Conta();
+
+	//Definindo o nome de ambas pelo metodo setNome
+	c1.setNome("Marvin");
+	c2.setNome("Ford");
+
+	//depositando
+	c1.deposita(100);
+	c2.deposita(100);
+
+	//imprimindo o saldo e o nome dos clientes
+	System.out.println("c1 - Nome: "+c1.getNome());
+	System.out.println("c1 - Saldo: "+c1.getSaldo());
+	System.out.println("c2 - Nome: "+c2.getNome());
+	System.out.println("c2 - Saldo: "+c2.getSaldo());
+	}
+	
